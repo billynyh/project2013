@@ -1,0 +1,77 @@
+// Bistre Theme
+
+@lavaBarHeight:6px;
+
+body {
+    border-top: @lavaBarHeight solid @themeColor1;
+    font-family: 'Open Sans', sans-serif;
+    background:url(../../images/gplaypattern.png);
+}
+
+.bistre-nav {
+    margin-bottom:40px;
+    .navbar {
+        margin-top:-@lavaBarHeight;
+    }
+
+}
+
+.navbar-inner-bistre {
+    min-height: 80px;
+    color:@navText;
+    z-index: 5;
+    
+    .brand {
+        font-weight:bold;
+    }
+
+    .navanimation {
+        position:relative;
+    }
+
+    .navanimation > li {
+        position:relative;
+        z-index:10;
+    }
+    .navanimation > li.backLava {
+        z-index:1;
+        background:rgba(255, 255, 255, 100);
+    }
+
+    a {
+        line-height:80px;
+        font-size:14px;
+        color:@navText;
+
+        span {
+            display:block;
+            line-height:0;
+            margin-top:-20px;
+            font-size:11px;
+            color:@navTextLight;
+            padding-bottom:20px;
+        }
+    }
+    
+    a:hover {
+        color:@navTextHover;
+        span {
+            color:@navTextLightHover;
+        }
+    }
+    
+    .backLava {
+        border-top: @lavaBarHeight solid @themeColorInverse;
+        height:0px;
+    }
+
+    .nav > .active > a,
+    .nav > .active > a:hover,
+    .nav > .active > a:focus {
+        
+    }
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
