@@ -1,0 +1,44 @@
+--- 
+title: Jan Project - Android helper
+date: 2013/01/31
+tags: blogging, middleman, hello, world
+banner: posts/201301/clogcat-1.jpg
+---
+
+<p>
+Helper script to do common task</p>
+
+<h3>to9patch.py</h3>
+<p>
+create 9patch with simple options.
+</p>
+<p>
+usage: to9patch.py infile -t top_offset -l left_offset -b bottom_offset -r right_offset -o outfile
+</p>
+<p>
+offset can be ?% or ?px, default is 20%
+</p>
+
+<h4>sample</h4>
+<pre>
+./to9patch sample/sample_normal.png 
+./to9patch sample/sample_normal.png -t 20%
+./to9patch sample/sample_normal.png -t 20% -l 30%
+./to9patch sample/sample_normal.png -t 20% -l 30% -o sample/a.9.png
+</pre>
+
+
+<h3>button_xml.py</h3>
+<p> generate the xml for a 2 state button </p>
+<p>
+usage: button_xml.py slug -n NORMAL_FS -a ACTIVE_FS</p>
+<p>
+default drawable name formats are %s_normal and %s_active
+</p>
+<h3>screencap.py</h3>
+android screen cap using monkeyrunner
+
+<h4>usage</h4>
+<pre>
+monkeyrunner screencap.py
+</pre>

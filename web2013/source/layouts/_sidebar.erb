@@ -1,3 +1,9 @@
+<% 
+def tag_item(icon, text)
+  '<li><a href="#" data-toggle="tooltip" title="%s"><i class="%s"></i></a></li>' % [ text, icon ]
+end
+
+%>
 <div class="well sidebar-nav">
   <ul class="nav nav-list">
     <li class="nav-header">Project 2013</li>
@@ -6,14 +12,11 @@
     <li><a href="#"><i class="icon-github"></i>Mar</a></li>
     <li><a href="#"><i class="icon-comments-alt"></i>Apr</a></li>
     <li class="nav-header">Tag</li>
-    <li><a href="#"><i class="z-icon-android"></i>Android</a></li>
-    <li><a href="#"><i class="icon-wrench"></i>Tool/Scripts</a></li>
-    <li><a href="#"><i class="icon-zoom-in"></i>UI</a></li>
-    <li><a href="#"><i class="icon-globe"></i>Web</a></li>
-    <li class="nav-header">Sidebar</li>
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
+  </ul>
+  <ul class="tags">
+    <%= tag_item("z-icon-android", "Android")  %>
+    <%= tag_item("icon-wrench", "Tool/Scripts")  %>
+    <%= tag_item("icon-zoom-in", "UI")  %>
+    <%= tag_item("icon-globe", "Web")  %>
   </ul>
 </div><!--/.well -->
-

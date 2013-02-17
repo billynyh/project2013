@@ -7,4 +7,5 @@ $(document).ready(function(){
             return true;
         }
     });
+    $("[data-toggle=\"tooltip\"]").tooltip();
 });

@@ -5627,3 +5627,55 @@ body {
 .sidebar-nav {
   padding: 9px 0;
 }
+
+.sidebar-nav .tags li {
+  display: inline;
+  font-size: 40px;
+  line-height: 50px;
+  list-style: none;
+}
+
+.sidebar-nav .tags li span.text {
+  display: none;
+}
+
+.sidebar-nav .tags li a,
+.sidebar-nav .tags li a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  padding: 10px 0;
+  margin-top: 20px;
+  color: #eaeaea;
+  background: #222222;
+  border-top: 2px solid #121212;
+}
+
+.single-post-item {
+  overflow: hidden;
+  background: rgba(200, 200, 200, 0.5);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.single-post-item header {
+  position: relative;
+}
+
+.single-post-item header h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.single-post-item header .meta {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}

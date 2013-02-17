@@ -53,6 +53,20 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :blog do |posts|
+  #posts.prefix = "posts"
+  posts.permalink = "posts/:year/:month/:title.html"
+  posts.sources = "posts/:year-:month-:day-:title.html"
+  posts.layout = "layouts/post"
+
+  posts.year_link = "posts/:year.html"
+  posts.month_link = "posts/:year/:month.html"
+  posts.day_link = "posts/:year/:month/:day.html"
+  posts.calendar_template = "posts/calendar.html"
+end
+
+ignore "assets/*"
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

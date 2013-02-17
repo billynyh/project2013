@@ -75,3 +75,53 @@ body {
 .sidebar-nav {
     padding: 9px 0;
 }
+
+.sidebar-nav .tags {
+    li {
+        list-style:none;
+        display:inline;
+        font-size:40px;
+        line-height:50px;
+        span.text {
+            display:none;
+        }
+
+        a, a:hover {
+            text-decoration:none;
+        }
+    }
+}
+
+.footer {
+    margin-top:20px;
+    border-top:2px solid #121212;
+    background:#222222;
+    padding:10px 0;
+    color:#eaeaea;
+}
+
+// post
+.single-post-item {
+    background:rgba(200,200,200,0.5);
+    .border-radius(4px);
+    overflow:hidden;
+    
+    header {
+        position:relative;
+        h1 {
+            position:absolute;
+            left:0;
+            bottom:20px;
+            padding:10px;
+            background:rgba(255,255,255,0.7);
+        }
+        .meta {
+            position:absolute;
+            right:0;
+            bottom:20px;
+            padding:10px;
+            background:rgba(255,255,255,0.7);
+        }
+    }
+
+}
